@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"bai09-realtimeds1307lcd\stm32f1xx_hal_flash_ex.o"
+"bai09-realtimeds1307lcd\stm32f1xx_hal_pwr.o"
+"bai09-realtimeds1307lcd\stm32f1xx_hal_cortex.o"
+"bai09-realtimeds1307lcd\stm32f1xx_hal_gpio_ex.o"
+"bai09-realtimeds1307lcd\stm32f1xx_hal_dma.o"
+"bai09-realtimeds1307lcd\stm32f1xx_hal_i2c.o"
+"bai09-realtimeds1307lcd\stm32f1xx_hal_tim_ex.o"
+"bai09-realtimeds1307lcd\stm32f1xx_hal.o"
+"bai09-realtimeds1307lcd\stm32f1xx_hal_tim.o"
+"bai09-realtimeds1307lcd\stm32f1xx_hal_gpio.o"
+"bai09-realtimeds1307lcd\stm32f1xx_hal_rcc.o"
+"bai09-realtimeds1307lcd\stm32f1xx_hal_flash.o"
+"bai09-realtimeds1307lcd\stm32f1xx_hal_rcc_ex.o"
+"bai09-realtimeds1307lcd\startup_stm32f103xb.o"
+"bai09-realtimeds1307lcd\stm32f1xx_hal_msp.o"
+"bai09-realtimeds1307lcd\main.o"
+"bai09-realtimeds1307lcd\stm32f1xx_it.o"
+"bai09-realtimeds1307lcd\textlcd.o"
+"bai09-realtimeds1307lcd\ds1307.o"
+"bai09-realtimeds1307lcd\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Bai09-RealtimeDS1307LCD\Bai09-RealtimeDS1307LCD.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bai09-RealtimeDS1307LCD.map" -o Bai09-RealtimeDS1307LCD\Bai09-RealtimeDS1307LCD.axf

@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"bai06rx-uart\system_stm32f1xx.o"
+"bai06rx-uart\stm32f1xx_hal_rcc.o"
+"bai06rx-uart\stm32f1xx_hal_flash.o"
+"bai06rx-uart\stm32f1xx_hal_uart.o"
+"bai06rx-uart\stm32f1xx_hal_cortex.o"
+"bai06rx-uart\stm32f1xx_hal_pwr.o"
+"bai06rx-uart\stm32f1xx_hal_gpio_ex.o"
+"bai06rx-uart\stm32f1xx_hal_dma.o"
+"bai06rx-uart\stm32f1xx_hal_gpio.o"
+"bai06rx-uart\stm32f1xx_hal_rcc_ex.o"
+"bai06rx-uart\stm32f1xx_hal.o"
+"bai06rx-uart\stm32f1xx_hal_flash_ex.o"
+"bai06rx-uart\stm32f1xx_hal_tim.o"
+"bai06rx-uart\stm32f1xx_hal_tim_ex.o"
+"bai06rx-uart\startup_stm32f103xb.o"
+"bai06rx-uart\main.o"
+"bai06rx-uart\stm32f1xx_it.o"
+"bai06rx-uart\stm32f1xx_hal_msp.o"
+"bai06rx-uart\textlcd.o"
+--library_type=microlib --strict --scatter "Bai06Rx-UART\Bai06Rx-UART.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bai06Rx-UART.map" -o Bai06Rx-UART\Bai06Rx-UART.axf

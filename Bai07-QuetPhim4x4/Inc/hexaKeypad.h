@@ -1,0 +1,49 @@
+#ifndef __HEXAKEYPAD_H
+#define __HEXAKEYPAD_H
+
+#include "main.h"
+#include "stm32f1xx_hal.h"
+
+#define ROW1 GPIO_PIN_5 
+#define ROW2 GPIO_PIN_4
+#define ROW3 GPIO_PIN_3
+#define ROW4 GPIO_PIN_15
+
+#define ROW1_PORT GPIOB
+#define ROW2_PORT GPIOB
+#define ROW3_PORT GPIOB
+#define ROW4_PORT GPIOA
+
+#define COL1 GPIO_PIN_12
+#define COL2 GPIO_PIN_11
+#define COL3 GPIO_PIN_10
+#define COL4 GPIO_PIN_9
+
+#define COL1_PORT GPIOA
+#define COL2_PORT GPIOA
+#define COL3_PORT GPIOA
+#define COL4_PORT GPIOA
+
+#define COL1_RD HAL_GPIO_ReadPin(COL1_PORT, COL1)
+#define COL2_RD HAL_GPIO_ReadPin(COL2_PORT, COL2)
+#define COL3_RD HAL_GPIO_ReadPin(COL3_PORT, COL3)
+#define COL4_RD HAL_GPIO_ReadPin(COL4_PORT, COL4)
+
+#define ROW1_WR_HIGH HAL_GPIO_WritePin(ROW1_PORT, ROW1, GPIO_PIN_SET)
+#define ROW2_WR_HIGH HAL_GPIO_WritePin(ROW2_PORT, ROW2, GPIO_PIN_SET)
+#define ROW3_WR_HIGH HAL_GPIO_WritePin(ROW3_PORT, ROW3, GPIO_PIN_SET)
+#define ROW4_WR_HIGH HAL_GPIO_WritePin(ROW4_PORT, ROW4, GPIO_PIN_SET)
+
+#define ROW1_WR_LOW HAL_GPIO_WritePin(ROW1_PORT, ROW1, GPIO_PIN_RESET)
+#define ROW2_WR_LOW HAL_GPIO_WritePin(ROW2_PORT, ROW2, GPIO_PIN_RESET)
+#define ROW3_WR_LOW HAL_GPIO_WritePin(ROW3_PORT, ROW3, GPIO_PIN_RESET)
+#define ROW4_WR_LOW HAL_GPIO_WritePin(ROW4_PORT, ROW4, GPIO_PIN_RESET)
+
+
+void hexaKeypadInit(void);
+
+unsigned char hexaKeypadReadKey(void);
+
+
+
+#endif /* __MAIN_H */

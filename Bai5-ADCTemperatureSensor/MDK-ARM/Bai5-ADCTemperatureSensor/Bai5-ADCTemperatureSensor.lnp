@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"bai5-adctemperaturesensor\stm32f1xx_hal_msp.o"
+"bai5-adctemperaturesensor\stm32f1xx_it.o"
+"bai5-adctemperaturesensor\main.o"
+"bai5-adctemperaturesensor\textlcd.o"
+"bai5-adctemperaturesensor\system_stm32f1xx.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal_dma.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal_rcc.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal_rcc_ex.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal_flash_ex.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal_flash.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal_tim_ex.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal_pwr.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal_gpio_ex.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal_adc_ex.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal_cortex.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal_tim.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal_gpio.o"
+"bai5-adctemperaturesensor\stm32f1xx_hal_adc.o"
+"bai5-adctemperaturesensor\startup_stm32f103xb.o"
+--library_type=microlib --strict --scatter "Bai5-ADCTemperatureSensor\Bai5-ADCTemperatureSensor.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bai5-ADCTemperatureSensor.map" -o Bai5-ADCTemperatureSensor\Bai5-ADCTemperatureSensor.axf

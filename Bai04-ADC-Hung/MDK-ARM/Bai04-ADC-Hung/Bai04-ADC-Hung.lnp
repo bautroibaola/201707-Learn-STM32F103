@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"bai04-adc-hung\system_stm32f1xx.o"
+"bai04-adc-hung\startup_stm32f103xb.o"
+"bai04-adc-hung\stm32f1xx_hal_msp.o"
+"bai04-adc-hung\stm32f1xx_it.o"
+"bai04-adc-hung\main.o"
+"bai04-adc-hung\textlcd.o"
+"bai04-adc-hung\stm32f1xx_hal_tim.o"
+"bai04-adc-hung\stm32f1xx_hal_adc.o"
+"bai04-adc-hung\stm32f1xx_hal_adc_ex.o"
+"bai04-adc-hung\stm32f1xx_hal_rcc.o"
+"bai04-adc-hung\stm32f1xx_hal_pwr.o"
+"bai04-adc-hung\stm32f1xx_hal_rcc_ex.o"
+"bai04-adc-hung\stm32f1xx_hal.o"
+"bai04-adc-hung\stm32f1xx_hal_flash_ex.o"
+"bai04-adc-hung\stm32f1xx_hal_cortex.o"
+"bai04-adc-hung\stm32f1xx_hal_gpio.o"
+"bai04-adc-hung\stm32f1xx_hal_gpio_ex.o"
+"bai04-adc-hung\stm32f1xx_hal_tim_ex.o"
+"bai04-adc-hung\stm32f1xx_hal_dma.o"
+"bai04-adc-hung\stm32f1xx_hal_flash.o"
+--library_type=microlib --strict --scatter "Bai04-ADC-Hung\Bai04-ADC-Hung.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bai04-ADC-Hung.map" -o Bai04-ADC-Hung\Bai04-ADC-Hung.axf

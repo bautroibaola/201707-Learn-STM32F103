@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"bai07-quetphim4x4\system_stm32f1xx.o"
+"bai07-quetphim4x4\stm32f1xx_hal_msp.o"
+"bai07-quetphim4x4\stm32f1xx_it.o"
+"bai07-quetphim4x4\main.o"
+"bai07-quetphim4x4\textlcd.o"
+"bai07-quetphim4x4\hexakeypad.o"
+"bai07-quetphim4x4\startup_stm32f103xb.o"
+"bai07-quetphim4x4\stm32f1xx_hal_rcc_ex.o"
+"bai07-quetphim4x4\stm32f1xx_hal_dma.o"
+"bai07-quetphim4x4\stm32f1xx_hal_tim.o"
+"bai07-quetphim4x4\stm32f1xx_hal_gpio.o"
+"bai07-quetphim4x4\stm32f1xx_hal_pwr.o"
+"bai07-quetphim4x4\stm32f1xx_hal_tim_ex.o"
+"bai07-quetphim4x4\stm32f1xx_hal_rcc.o"
+"bai07-quetphim4x4\stm32f1xx_hal_cortex.o"
+"bai07-quetphim4x4\stm32f1xx_hal_flash.o"
+"bai07-quetphim4x4\stm32f1xx_hal_flash_ex.o"
+"bai07-quetphim4x4\stm32f1xx_hal_gpio_ex.o"
+"bai07-quetphim4x4\stm32f1xx_hal.o"
+--library_type=microlib --strict --scatter "Bai07-QuetPhim4x4\Bai07-QuetPhim4x4.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bai07-QuetPhim4x4.map" -o Bai07-QuetPhim4x4\Bai07-QuetPhim4x4.axf

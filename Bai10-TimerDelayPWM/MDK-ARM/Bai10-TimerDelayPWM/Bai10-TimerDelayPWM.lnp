@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"bai10-timerdelaypwm\stm32f1xx_it.o"
+"bai10-timerdelaypwm\stm32f1xx_hal_msp.o"
+"bai10-timerdelaypwm\main.o"
+"bai10-timerdelaypwm\textlcd.o"
+"bai10-timerdelaypwm\system_stm32f1xx.o"
+"bai10-timerdelaypwm\startup_stm32f103xb.o"
+"bai10-timerdelaypwm\stm32f1xx_hal_tim.o"
+"bai10-timerdelaypwm\stm32f1xx_hal_flash.o"
+"bai10-timerdelaypwm\stm32f1xx_hal.o"
+"bai10-timerdelaypwm\stm32f1xx_hal_gpio.o"
+"bai10-timerdelaypwm\stm32f1xx_hal_pwr.o"
+"bai10-timerdelaypwm\stm32f1xx_hal_flash_ex.o"
+"bai10-timerdelaypwm\stm32f1xx_hal_rcc.o"
+"bai10-timerdelaypwm\stm32f1xx_hal_rcc_ex.o"
+"bai10-timerdelaypwm\stm32f1xx_hal_tim_ex.o"
+"bai10-timerdelaypwm\stm32f1xx_hal_dma.o"
+"bai10-timerdelaypwm\stm32f1xx_hal_cortex.o"
+"bai10-timerdelaypwm\stm32f1xx_hal_gpio_ex.o"
+--library_type=microlib --strict --scatter "Bai10-TimerDelayPWM\Bai10-TimerDelayPWM.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bai10-TimerDelayPWM.map" -o Bai10-TimerDelayPWM\Bai10-TimerDelayPWM.axf

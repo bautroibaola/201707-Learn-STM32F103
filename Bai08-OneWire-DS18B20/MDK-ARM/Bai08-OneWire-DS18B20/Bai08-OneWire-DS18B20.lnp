@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"bai08-onewire-ds18b20\startup_stm32f103xb.o"
+"bai08-onewire-ds18b20\stm32f1xx_hal_tim_ex.o"
+"bai08-onewire-ds18b20\stm32f1xx_hal_pwr.o"
+"bai08-onewire-ds18b20\stm32f1xx_hal_gpio.o"
+"bai08-onewire-ds18b20\stm32f1xx_hal_flash_ex.o"
+"bai08-onewire-ds18b20\stm32f1xx_hal_dma.o"
+"bai08-onewire-ds18b20\stm32f1xx_hal_flash.o"
+"bai08-onewire-ds18b20\stm32f1xx_hal_rcc_ex.o"
+"bai08-onewire-ds18b20\stm32f1xx_hal_gpio_ex.o"
+"bai08-onewire-ds18b20\stm32f1xx_hal.o"
+"bai08-onewire-ds18b20\stm32f1xx_hal_rcc.o"
+"bai08-onewire-ds18b20\stm32f1xx_hal_tim.o"
+"bai08-onewire-ds18b20\stm32f1xx_hal_cortex.o"
+"bai08-onewire-ds18b20\stm32f1xx_hal_msp.o"
+"bai08-onewire-ds18b20\stm32f1xx_it.o"
+"bai08-onewire-ds18b20\main.o"
+"bai08-onewire-ds18b20\onewire.o"
+"bai08-onewire-ds18b20\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Bai08-OneWire-DS18B20\Bai08-OneWire-DS18B20.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bai08-OneWire-DS18B20.map" -o Bai08-OneWire-DS18B20\Bai08-OneWire-DS18B20.axf

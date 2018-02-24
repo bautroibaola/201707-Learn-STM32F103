@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"bai11-docnhietdods18020\system_stm32f1xx.o"
+"bai11-docnhietdods18020\main.o"
+"bai11-docnhietdods18020\stm32f1xx_hal_msp.o"
+"bai11-docnhietdods18020\stm32f1xx_it.o"
+"bai11-docnhietdods18020\delay.o"
+"bai11-docnhietdods18020\textlcd.o"
+"bai11-docnhietdods18020\startup_stm32f103xb.o"
+"bai11-docnhietdods18020\stm32f1xx_hal_cortex.o"
+"bai11-docnhietdods18020\stm32f1xx_hal_gpio_ex.o"
+"bai11-docnhietdods18020\stm32f1xx_hal_rcc_ex.o"
+"bai11-docnhietdods18020\stm32f1xx_hal_rcc.o"
+"bai11-docnhietdods18020\stm32f1xx_hal_dma.o"
+"bai11-docnhietdods18020\stm32f1xx_hal_flash.o"
+"bai11-docnhietdods18020\stm32f1xx_hal_tim.o"
+"bai11-docnhietdods18020\stm32f1xx_hal_pwr.o"
+"bai11-docnhietdods18020\stm32f1xx_hal_flash_ex.o"
+"bai11-docnhietdods18020\stm32f1xx_hal_gpio.o"
+"bai11-docnhietdods18020\stm32f1xx_hal_tim_ex.o"
+"bai11-docnhietdods18020\stm32f1xx_hal.o"
+--library_type=microlib --strict --scatter "Bai11-DocnhietdoDS18020\Bai11-DocnhietdoDS18020.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bai11-DocnhietdoDS18020.map" -o Bai11-DocnhietdoDS18020\Bai11-DocnhietdoDS18020.axf
